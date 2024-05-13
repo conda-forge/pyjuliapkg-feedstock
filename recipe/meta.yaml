@@ -1,6 +1,6 @@
 {% set name = "pyjuliapkg" %}
 {% set pypi_name = "juliapkg" %}
-{% set version = "0.1.12" %}
+{% set version = "0.1.13" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ pypi_name[0] }}/{{ pypi_name }}/juliapkg-{{ version }}.tar.gz
-  sha256: 8bd0af7ce08083e22fb9b082b909bf3f42253086cc37912e938748adf86685b9
+  sha256: 4273ac66ef4b4d6832b995af2c7a80d5e8a1c22567cba1846d61bf23dd9335c3
 
 build:
   noarch: python
@@ -17,11 +17,12 @@ build:
 
 requirements:
   host:
-    - python >=3.7
+    - python >=3.8
     - pip
+    - hatchling
   run:
-    - python >=3.7
-    - semantic_version >=2.9,<3.dev0
+    - python >=3.8
+    - semver >=3.0,<4.dev0
 
 test:
   imports:
