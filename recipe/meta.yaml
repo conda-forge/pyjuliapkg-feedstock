@@ -23,6 +23,7 @@ requirements:
   run:
     - python >=3.8
     - semver >=3.0,<4.dev0
+    - filelock >=3.16,<4.dev0
 
 test:
   imports:
