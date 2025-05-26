@@ -1,6 +1,6 @@
 {% set name = "pyjuliapkg" %}
 {% set pypi_name = "juliapkg" %}
-{% set version = "0.1.15" %}
+{% set version = "0.1.16" %}
 
 package:
   name: {{ name|lower }}
@@ -23,6 +23,7 @@ requirements:
   run:
     - python >={{ python_min }}
     - semver >=3.0,<4.dev0
+    - filelock >=3.16,<4.dev0
 
 test:
   imports:
