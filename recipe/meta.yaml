@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ pypi_name[0] }}/{{ pypi_name }}/juliapkg-{{ version }}.tar.gz
-  sha256: a36096fed2ddfe6fbd1af9bfd1b182136d84a660d0c4187539194229fb383720
+  sha256: f26cc314f2a3194428bf7492270b1c371194ce288806ffbac5baa0eb9468a120
 
 build:
   noarch: python
