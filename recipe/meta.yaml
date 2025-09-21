@@ -24,6 +24,8 @@ requirements:
     - python >={{ python_min }}
     - semver >=3.0,<4.dev0
     - filelock >=3.16,<4.dev0
+    - tomlkit >=0.13.3,<0.14
+    - tomli >=2.0,<3.dev0
 
 test:
   imports:
