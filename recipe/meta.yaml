@@ -1,6 +1,6 @@
 {% set name = "pyjuliapkg" %}
 {% set pypi_name = "juliapkg" %}
-{% set version = "0.1.19" %}
+{% set version = "0.1.20" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ pypi_name[0] }}/{{ pypi_name }}/juliapkg-{{ version }}.tar.gz
-  sha256: 02076cfe58f661c56efcd5ba559f050a434e790b8d049482b73197fd241d76b6
+  sha256: bdbd9521399d65b2fda7d9aca82c80da8ffecec53e071d3b5b412064809347c2
 
 build:
   noarch: python
@@ -24,6 +24,8 @@ requirements:
     - python >={{ python_min }}
     - semver >=3.0,<4.dev0
     - filelock >=3.16,<4.dev0
+    - tomlkit >=0.13.3,<0.14
+    - tomli >=2.0,<3.dev0
 
 test:
   imports:
