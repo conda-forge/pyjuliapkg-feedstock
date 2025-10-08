@@ -1,6 +1,6 @@
 {% set name = "pyjuliapkg" %}
 {% set pypi_name = "juliapkg" %}
-{% set version = "0.1.20" %}
+{% set version = "0.1.21" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ pypi_name[0] }}/{{ pypi_name }}/juliapkg-{{ version }}.tar.gz
-  sha256: bdbd9521399d65b2fda7d9aca82c80da8ffecec53e071d3b5b412064809347c2
+  sha256: 1a6da7235405def3e955efcf78ed0a4af8148992a9653d25d9a2d434178f844f
 
 build:
   noarch: python
