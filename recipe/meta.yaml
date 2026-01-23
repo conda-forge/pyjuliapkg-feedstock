@@ -13,7 +13,7 @@ source:
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 0
+  number: 1
 
 requirements:
   host:
@@ -26,6 +26,7 @@ requirements:
     - filelock >=3.16,<4.dev0
     - tomlkit >=0.13.3,<0.14
     - tomli >=2.0,<3.dev0
+    - click >=8.0,<9.0
 
 test:
   imports:
@@ -35,6 +36,9 @@ test:
   requires:
     - pip
     - python {{ python_min }}
+    - python -m juliapkg --help
+
+
 
 about:
   home: https://github.com/JuliaPy/pyjuliapkg
