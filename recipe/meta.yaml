@@ -38,8 +38,6 @@ test:
     - python {{ python_min }}
     - python -m juliapkg --help
 
-
-
 about:
   home: https://github.com/JuliaPy/pyjuliapkg
   summary: Julia version manager and package manager
